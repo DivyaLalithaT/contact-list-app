@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Data Display</title>
+<link rel="stylesheet" href="record deletion.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="split left">
+        <div class="centered">
+            <h2>Login Form</h2>
+            <form id="loginForm" class="loginform" onsubmit="userSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name">
+                <br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter address">
+                <br><br>
+                <label for="phonenumber">Phonenumber:</label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter phonenumber">
+                <br><br>
+                <button  type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div class="split right">
+        <h2 align=" center" >User Data</h2>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phonenumber</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="usersData">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="record deletion.js"></script>
+</body>
+</html>
